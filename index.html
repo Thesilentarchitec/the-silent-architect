@@ -36,6 +36,24 @@
         .bg-dark-card {
             background-color: #121212;
         }
+        .blueprint-bg {
+            background-image: 
+                linear-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            background-position: center center;
+        }
+        .blueprint-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+        }
         scroll-behavior: smooth;
     </style>
 </head>
@@ -59,8 +77,9 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-        <div data-aos="fade-up" data-aos-duration="1000">
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20 relative blueprint-bg">
+        <div class="blueprint-lines"></div>
+        <div class="relative z-10" data-aos="fade-up" data-aos-duration="1000">
             <span class="text-gold uppercase tracking-[0.3em] text-sm mb-4 block">Strategic Exit Blueprint</span>
             <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
                 Master the Art of the <br><span class="text-gold">Silent Exit</span>
@@ -194,26 +213,38 @@
                 <div class="space-y-6">
                     <div class="flex items-center gap-4">
                         <i data-lucide="check-circle" class="text-gold"></i>
-                        <span class="text-lg">5 Strategic Chapters</span>
+                        <span class="text-lg">5 Strategic Chapters (The Blueprint)</span>
                     </div>
+                    <ul class="ml-10 text-gray-500 text-sm space-y-2">
+                        <li>• Phase 1: Emotional Firewall & De-identification</li>
+                        <li>• Phase 2: Information Vacuum & Privacy Protocol</li>
+                        <li>• Phase 3: Strategic Compliance & Min-Maxing</li>
+                        <li>• Phase 4: Capital Transmutation & Asset Building</li>
+                        <li>• Phase 5: The Surgical Exit Strategy</li>
+                    </ul>
                     <div class="flex items-center gap-4">
                         <i data-lucide="check-circle" class="text-gold"></i>
-                        <span class="text-lg">10+ Tactical Scripts</span>
+                        <span class="text-lg">12 Tactical Scripts</span>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <i data-lucide="check-circle" class="text-gold"></i>
-                        <span class="text-lg">The Exit Calculator</span>
-                    </div>
+                    <ul class="ml-10 text-gray-500 text-sm space-y-2">
+                        <li>• The "Saying No Without Saying No" Script</li>
+                        <li>• The Promotion Refusal Protocol</li>
+                        <li>• The Resignation Surgical Strike</li>
+                    </ul>
                 </div>
                 <div class="space-y-6">
                     <div class="flex items-center gap-4">
                         <i data-lucide="check-circle" class="text-gold"></i>
                         <span class="text-lg">The "Grey Man" Protocol</span>
                     </div>
+                    <p class="ml-10 text-gray-500 text-sm">How to become completely invisible to office politics while maintaining high perceived value.</p>
+                    
                     <div class="flex items-center gap-4">
                         <i data-lucide="check-circle" class="text-gold"></i>
-                        <span class="text-lg">Side-Income Acceleration Map</span>
+                        <span class="text-lg">The Exit Calculator (Spreadsheet)</span>
                     </div>
+                    <p class="ml-10 text-gray-500 text-sm">Calculate your exact "Independence Day" based on your current savings and side-income velocity.</p>
+
                     <div class="flex items-center gap-4">
                         <i data-lucide="check-circle" class="text-gold"></i>
                         <span class="text-lg">Lifetime Access & Updates</span>
