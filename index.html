@@ -321,8 +321,60 @@
         </div>
     </section>
 
+    <!-- Free PDF Guide Section -->
+    <section id="free-guide" class="py-24 px-6 bg-[#0c0c0c] border-t border-white/5">
+        <div class="max-w-4xl mx-auto text-center">
+            <div data-aos="fade-up">
+                <span class="text-gold uppercase tracking-[0.3em] text-sm mb-4 block">Free Download</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 uppercase tracking-tight">
+                    Get the <span class="text-gold">Survival Guide</span>
+                </h2>
+                <p class="text-gray-400 text-lg mb-10 max-w-xl mx-auto">
+                    A tactical guide to surviving toxic workplaces without losing your mind. 
+                    Enter your email for instant access — or download directly below.
+                </p>
+                
+                <!-- Email Signup -->
+                <form id="ck-signup-form" class="max-w-md mx-auto mb-12" onsubmit="handleSubscribe(event)">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" name="email_address" placeholder="Enter your email address" required 
+                            class="flex-1 bg-dark-card border border-white/10 px-6 py-4 text-white focus:outline-none focus:border-gold/50 transition rounded-sm">
+                        <button type="submit" class="btn-gold px-8 py-4 font-bold uppercase tracking-widest rounded-sm whitespace-nowrap">
+                            Get Free Guide
+                        </button>
+                    </div>
+                    <div id="form-message" class="hidden mt-4">
+                        <p class="text-gold font-mono text-sm uppercase tracking-widest">
+                            > Connection established. Check your inbox for the protocol.
+                        </p>
+                    </div>
+                    <p class="text-[10px] text-gray-600 mt-4 uppercase tracking-widest">
+                        Secure transmission. No spam. Tactical insights only.
+                    </p>
+                </form>
+                
+                <!-- OR Divider -->
+                <div class="flex items-center gap-4 max-w-md mx-auto mb-12">
+                    <div class="flex-1 h-px bg-white/10"></div>
+                    <span class="text-gray-600 text-xs uppercase">or</span>
+                    <div class="flex-1 h-px bg-white/10"></div>
+                </div>
+                
+                <!-- Direct Download -->
+                <a href="/toxic-workplace-guide.md" download="Silent-Architect-Survival-Guide.md" 
+                   class="inline-flex items-center gap-3 border border-gold/30 px-8 py-4 text-gold hover:bg-gold hover:text-black transition duration-300 uppercase tracking-widest text-sm font-bold rounded-sm">
+                    <i data-lucide="download" size="18"></i>
+                    Download Free Guide (Markdown)
+                </a>
+                <p class="text-[10px] text-gray-600 mt-4 uppercase tracking-widest">
+                    Open in any app to read. Convert to PDF easily.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Product Preview -->
-    <section id="preview" class="py-24 px-6 bg-[#0c0c0c]">
+    <section id="preview" class="py-24 px-6 bg-[#0a0a0a]">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 uppercase">Product Preview</h2>
@@ -431,6 +483,30 @@
                 });
             });
         });
+
+        // Form handling for email signup
+        window.handleSubscribe = async function(e) {
+            e.preventDefault();
+            const form = document.getElementById('ck-signup-form');
+            const email = form.querySelector('input[name="email_address"]').value;
+            
+            try {
+                const response = await fetch('/api/subscribe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email })
+                });
+                
+                if (response.ok) {
+                    form.querySelector('.flex').classList.add('hidden');
+                    document.getElementById('form-message').classList.remove('hidden');
+                } else {
+                    alert('Something went wrong. Please try again.');
+                }
+            } catch (error) {
+                alert('Something went wrong. Please try again.');
+            }
+        };
     </script>
 </body>
 </html>
