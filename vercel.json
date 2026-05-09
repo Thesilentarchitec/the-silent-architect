@@ -5,7 +5,4 @@
       "schedule": "* * * * *"
     }
   ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
 }
