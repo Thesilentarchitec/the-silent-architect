@@ -22,6 +22,7 @@ import {
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import PurchaseBar from '../components/PurchaseBar';
+import SocialProof from '../components/SocialProof';
 
 export default function Home() {
   useEffect(() => {
@@ -36,7 +37,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Navigation */}
-      <nav className="fixed w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/5">
+      <nav className="sticky top-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-xl font-bold tracking-tighter uppercase">
             Silent<span className="text-gold">Architect</span>
@@ -146,7 +147,7 @@ export default function Home() {
             <div className="text-center group" data-aos="fade-up" data-aos-delay="100">
               <div className="mb-8 flex justify-center">
                 <div className="w-16 h-16 border border-white/10 flex items-center justify-center group-hover:border-gold/50 transition-colors duration-500">
-                  <Zap className="text-gold opacity-50 group-hover:opacity-100 transition-opacity" size={28} />
+                  <Shield className="text-gold opacity-50 group-hover:opacity-100 transition-opacity" size={28} />
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-4 text-gold uppercase tracking-widest">The Foundation</h3>
@@ -157,7 +158,7 @@ export default function Home() {
             <div className="text-center group" data-aos="fade-up" data-aos-delay="200">
               <div className="mb-8 flex justify-center">
                 <div className="w-16 h-16 border border-white/10 flex items-center justify-center group-hover:border-gold/50 transition-colors duration-500">
-                  <Box className="text-gold opacity-50 group-hover:opacity-100 transition-opacity" size={28} />
+                  <Layout className="text-gold opacity-50 group-hover:opacity-100 transition-opacity" size={28} />
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-4 text-gold uppercase tracking-widest">The Structure</h3>
@@ -168,7 +169,7 @@ export default function Home() {
             <div className="text-center group" data-aos="fade-up" data-aos-delay="300">
               <div className="mb-8 flex justify-center">
                 <div className="w-16 h-16 border border-white/10 flex items-center justify-center group-hover:border-gold/50 transition-colors duration-500">
-                  <Shield className="text-gold opacity-50 group-hover:opacity-100 transition-opacity" size={28} />
+                  <Zap className="text-gold opacity-50 group-hover:opacity-100 transition-opacity" size={28} />
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-4 text-gold uppercase tracking-widest">The Sovereignty</h3>
@@ -260,7 +261,7 @@ export default function Home() {
           <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
             <Lock size={200} />
           </div>
-          <h2 className="text-4xl font-bold mb-6 uppercase tracking-tighter relative z-10">Reclaim Your Mental Territory</h2>
+          <h2 className="text-4xl font-bold mb-6 uppercase tracking-tighter relative z-10">Reclaim Your Narrative</h2>
           <p className="text-gray-400 mb-10 max-w-xl mx-auto relative z-10">
             Join those who have already exited the cycle of reactive living.
           </p>
@@ -281,6 +282,7 @@ export default function Home() {
       </footer>
 
       <PurchaseBar />
+      <SocialProof />
     </main>
   );
 }
