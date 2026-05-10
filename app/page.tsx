@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import PurchaseBar from '@/components/PurchaseBar';
+import PurchaseBar from '../components/PurchaseBar';
 
 export default function Home() {
   useEffect(() => {
