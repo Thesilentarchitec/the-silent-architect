@@ -266,7 +266,7 @@ export default function Home() {
             Join those who have already exited the cycle of reactive living.
           </p>
           <a href={gumroadLink} className="btn-gold px-12 py-5 rounded-none font-bold text-xl uppercase tracking-widest inline-block mb-8 relative z-10 hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] transition-all">
-            Get The Blueprint — $19
+            Get The Blueprint — $28
           </a>
           <p className="text-gold/60 text-[10px] font-mono tracking-[0.3em] uppercase">{">"} initialize_liberation_sequence.sh</p>
         </div>

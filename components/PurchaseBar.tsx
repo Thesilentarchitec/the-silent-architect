@@ -7,7 +7,7 @@ export default function PurchaseBar() {
     <div className="fixed bottom-0 left-0 w-full z-[100] backdrop-blur-md bg-black/50 border-t border-white/10 px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="text-white font-medium tracking-tight">
-          The Silent Architect — $19
+          The Silent Architect — $28
         </div>
         <a 
           href={gumroadLink}
