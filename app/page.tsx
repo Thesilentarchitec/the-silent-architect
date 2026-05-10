@@ -159,7 +159,7 @@ export default function Home() {
           <a href={gumroadLink} className="btn-gold px-12 py-5 rounded-sm font-bold text-xl uppercase tracking-widest inline-block mb-4">
             Get the Full Blueprint — $19
           </a>
-          <p className="text-gold/60 text-xs font-mono tracking-widest">> tactical_ops: complete_liberation_protocol.exe</p>
+          <p className="text-gold/60 text-xs font-mono tracking-widest">{">"} tactical_ops: complete_liberation_protocol.exe</p>
         </div>
       </section>
 
