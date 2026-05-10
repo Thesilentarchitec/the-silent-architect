@@ -261,7 +261,7 @@ export default function Home() {
           <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
             <Lock size={200} />
           </div>
-          <h2 className="text-4xl font-bold mb-6 uppercase tracking-tighter relative z-10">Reclaim Your Narrative</h2>
+          <h2 className="text-4xl font-bold mb-6 uppercase tracking-tighter relative z-10">Reclaim Your Narrative.</h2>
           <p className="text-gray-400 mb-10 max-w-xl mx-auto relative z-10">
             Join those who have already exited the cycle of reactive living.
           </p>
