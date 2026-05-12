@@ -23,6 +23,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import PurchaseBar from '../components/PurchaseBar';
 import SocialProof from '../components/SocialProof';
+import Reviews from '../components/Reviews';
 
 export default function Home() {
   useEffect(() => {
@@ -271,6 +272,8 @@ export default function Home() {
           <p className="text-gold/60 text-[10px] font-mono tracking-[0.3em] uppercase">{">"} initialize_liberation_sequence.sh</p>
         </div>
       </section>
+
+      <Reviews />
 
       <footer className="py-12 px-6 border-t border-white/5 text-center">
         <div className="text-xl font-bold tracking-tighter uppercase mb-4">
