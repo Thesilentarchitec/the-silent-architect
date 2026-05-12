@@ -14,6 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="canonical" href="https://the-silent-architect.vercel.app/" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="overflow-x-hidden bg-[#0a0a0a] text-[#f5f5f5]">
