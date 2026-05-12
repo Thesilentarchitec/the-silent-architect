@@ -18,70 +18,70 @@ const initialReviews: Review[] = [
     author: "Julian Vane",
     rating: 5,
     content: "A rigorous methodology for reclaimed focus. The foundation module alone was worth the investment.",
-    date: "2024.03.12"
+    date: "2026.03.12"
   },
   {
     id: 2,
     author: "Elena Rossi",
     rating: 5,
     content: "Silent Architect provides the blueprint I didn't know I needed. My deep work sessions have tripled in efficiency.",
-    date: "2024.03.15"
+    date: "2026.03.15"
   },
   {
     id: 3,
     author: "Alistair Thorne",
     rating: 5,
     content: "Architecture for the mind is a perfect description. This is systematic liberation from the digital noise.",
-    date: "2024.03.28"
+    date: "2026.03.28"
   },
   {
     id: 4,
     author: "Marcus Chen",
     rating: 5,
     content: "The surgical exit strategy gave me the clarity to transition into my new venture without the typical chaos.",
-    date: "2024.04.02"
+    date: "2026.04.02"
   },
   {
     id: 5,
     author: "Sarah J.",
     rating: 5,
     content: "Deeply transformative. The emotional firewall protocols are now part of my daily operating system.",
-    date: "2024.04.10"
+    date: "2026.04.10"
   },
   {
     id: 6,
     author: "Dr. Aris Volkov",
     rating: 5,
     content: "Elegant, precise, and effective. A masterclass in cognitive sovereignty.",
-    date: "2024.04.15"
+    date: "2026.04.15"
   },
   {
     id: 7,
     author: "Maya K.",
     rating: 5,
     content: "Finally, a framework that doesn't just talk about focus but builds the environment for it.",
-    date: "2024.04.22"
+    date: "2026.04.22"
   },
   {
     id: 8,
     author: "Silas Graves",
     rating: 5,
     content: "Strategic, architectural, and profound. The framework has become my primary defensive system.",
-    date: "2024.05.01"
+    date: "2026.05.01"
   },
   {
     id: 9,
     author: "Olivia Thorne",
     rating: 5,
     content: "The transition from noise to rhythm has changed my entire creative process. Essential reading.",
-    date: "2024.05.05"
+    date: "2026.05.05"
   },
   {
     id: 10,
     author: "David S.",
     rating: 5,
     content: "A masterfully designed system. The return on attention is immediate and measurable.",
-    date: "2024.05.10"
+    date: "2026.05.10"
   }
 ];
 
